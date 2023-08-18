@@ -1,10 +1,3 @@
-//
-//  mainPage3.swift
-//  SocialAp
-//
-//  Created by R87 on 17/08/23.
-//
-
 import UIKit
 import FirebaseCore
 import FirebaseAuth
@@ -27,39 +20,29 @@ class mainPage3: UIViewController {
     @IBAction func phnBtn(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    
     func realTime(){
         ref.child("User").childByAutoId() .setValue(["Email":emailTxt.text!])
         print("done")
     }
+    
     @IBAction func nextButtonAction(_ sender: Any) {
         createAccount()
+        
     }
+    
     func createAccount(){
         Auth.auth().createUser(withEmail: emailTxt.text!, password: passwordTxt.text!) {[self] authDataResult, error in
             if error == nil{
                 var uid = authDataResult?.user.uid
                 refr.collection("user").document(uid!).setData(["E-Mail": emailTxt.text!,"password": passwordTxt.text!])
+                let navigate = storyboard?.instantiateViewController(withIdentifier: "mainPage4") as! mainPage4
+                navigationController?.pushViewController(navigate, animated: true)
                 print("done")
             }else{
                 print(error?.localizedDescription)
             }
         }
-        
     }
-    
-
-
 }
 
-
-//{
-//    Auth.auth().createUser(withEmail: emailTxt.text!,password: passwordTxt.text!) { [self] authResult, error in
-//        if error == nil{
-//            var uid = authResult?.user.uid
-//            refr.collection("iOS").document(uid!).setData(["E-Mail": emailTxt.text!,"password": passwordTxt.text!])
-//            print("done")
-//        }else{
-//            print(error?.localizedDescription)
-//        }
-//    }
-//}

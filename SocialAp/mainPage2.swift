@@ -37,18 +37,29 @@ class mainPage2: UIViewController {
     }
     
     func showDataInFire(){
-        refr.collection("user").addDocument(data: ["Mobile no": mobileNoTxt.text!, "Password": passwordTxt.text!])
+        var uid = Auth.auth().currentUser!.uid
+        refr.collection("user").document(uid).setData(["Mobile no": mobileNoTxt.text!, "Password": passwordTxt.text!]) {[self] error in
+            if error == nil{
+                let navigate = storyboard?.instantiateViewController(withIdentifier: "mainPage4") as! mainPage4
+                navigationController?.pushViewController(navigate, animated: true)
+                verifyOtp()
+            }else{
+                print(error?.localizedDescription)
+            }
+        }
     }
    
     @IBAction func nextButtonAction(_ sender: Any) {
         showDataInFire()
     }
-   
-
+    
+    func verifyOtp(){
+        PhoneAuthProvider.provider().verifyPhoneNumber(mobileNoTxt.text!, uiDelegate: nil) {[self] verificationId, error in
+            if error == nil{
+                print("done")
+            }else{
+                print(error?.localizedDescription)
+            }
+        }
+    }
 }
-
-
-
-//var uid = Auth.auth().currentUser!.uid
-//refr.collection("iOS").document(uid).setData(["Phone No":mobileNoTxt.text!,"Password": passwordTxt.text!])
-//print("done")

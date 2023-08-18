@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		97C947E1CC87EC8DA9F37CAA /* Pods_SocialAp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83BCE021D3C4DA8C99D04D4 /* Pods_SocialAp.framework */; };
 		B3EC66BD9AC91E678313F250 /* Pods_SocialAp_SocialApUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16780696F71C6D373C5FE01 /* Pods_SocialAp_SocialApUITests.framework */; };
+		C23DACFB2A8F7461005A1322 /* mainPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23DACFA2A8F7461005A1322 /* mainPage4.swift */; };
 		C2BEC63F2A8E288A0001B9EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2BEC63E2A8E288A0001B9EC /* GoogleService-Info.plist */; };
 		C2BEC6432A8E29430001B9EC /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BEC6422A8E29430001B9EC /* mainPage.swift */; };
 		C2BEC6452A8E295C0001B9EC /* signInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BEC6442A8E295C0001B9EC /* signInPage.swift */; };
@@ -57,6 +58,7 @@
 		A09E5BFBE3D4F6365518EBDA /* Pods-SocialAp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialAp.release.xcconfig"; path = "Target Support Files/Pods-SocialAp/Pods-SocialAp.release.xcconfig"; sourceTree = "<group>"; };
 		A83BCE021D3C4DA8C99D04D4 /* Pods_SocialAp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialAp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE85FD1423AC7DC7E6A71851 /* Pods_SocialApTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialApTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23DACFA2A8F7461005A1322 /* mainPage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage4.swift; sourceTree = "<group>"; };
 		C2BEC63E2A8E288A0001B9EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C2BEC6422A8E29430001B9EC /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
 		C2BEC6442A8E295C0001B9EC /* signInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInPage.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				C2F50CA72A8E1E6000D5962F /* ViewController.swift */,
 				C2F50CA92A8E1E6000D5962F /* Main.storyboard */,
 				C2BEC6542A8E2CCF0001B9EC /* tabBar.swift */,
+				C23DACFA2A8F7461005A1322 /* mainPage4.swift */,
 				C2BEC6522A8E2C960001B9EC /* reelsPage.swift */,
 				C2BEC6502A8E2C790001B9EC /* NewPost.swift */,
 				C2BEC64E2A8E2C690001B9EC /* searchPage.swift */,
@@ -449,6 +452,7 @@
 				C2BEC6432A8E29430001B9EC /* mainPage.swift in Sources */,
 				C2F50CA82A8E1E6000D5962F /* ViewController.swift in Sources */,
 				C2F50CAE2A8E1E6000D5962F /* SocialAp.xcdatamodeld in Sources */,
+				C23DACFB2A8F7461005A1322 /* mainPage4.swift in Sources */,
 				C2BEC6552A8E2CCF0001B9EC /* tabBar.swift in Sources */,
 				C2BEC6532A8E2C960001B9EC /* reelsPage.swift in Sources */,
 				C2F50CA42A8E1E6000D5962F /* AppDelegate.swift in Sources */,
