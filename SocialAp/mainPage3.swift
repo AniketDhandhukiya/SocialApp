@@ -35,17 +35,31 @@ class mainPage3: UIViewController {
         createAccount()
     }
     func createAccount(){
-        Auth.auth().createUser(withEmail: emailTxt.text!,password: passwordTxt.text!) { [self] authResult, error in
+        Auth.auth().createUser(withEmail: emailTxt.text!, password: passwordTxt.text!) {[self] authDataResult, error in
             if error == nil{
-                var uid = authResult?.user.uid
-                refr.collection("iOS").document(uid!).setData(["E-Mail": emailTxt.text!,"password": passwordTxt.text!])
+                var uid = authDataResult?.user.uid
+                refr.collection("user").document(uid!).setData(["E-Mail": emailTxt.text!,"password": passwordTxt.text!])
                 print("done")
             }else{
                 print(error?.localizedDescription)
             }
         }
+        
     }
     
 
 
 }
+
+
+//{
+//    Auth.auth().createUser(withEmail: emailTxt.text!,password: passwordTxt.text!) { [self] authResult, error in
+//        if error == nil{
+//            var uid = authResult?.user.uid
+//            refr.collection("iOS").document(uid!).setData(["E-Mail": emailTxt.text!,"password": passwordTxt.text!])
+//            print("done")
+//        }else{
+//            print(error?.localizedDescription)
+//        }
+//    }
+//}

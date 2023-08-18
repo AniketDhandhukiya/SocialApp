@@ -9,13 +9,13 @@ import UIKit
 import iOSDropDown
 import FirebaseCore
 import FirebaseAuth
-import FirebaseDatabase
 import FirebaseFirestore
 
 class mainPage2: UIViewController {
-    var ref: DatabaseReference!
-    var refr: Firestore!
-    
+    //var ref: DatabaseReference!
+//    var refr: Firestore!
+   var refr = Firestore.firestore()
+
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var mobileNoTxt: UITextField!
     @IBOutlet weak var drpdwn: DropDown!
@@ -24,8 +24,7 @@ class mainPage2: UIViewController {
         super.viewDidLoad()
         drpdwn.optionArray = ["+1","+91"]
         drpdwn.text = drpdwn.optionArray[1]
-        ref = Database.database().reference()
-        refr = Firestore.firestore()
+        //ref = Database.database().reference()
 
     }
     @IBAction func emailBtn(_ sender: Any) {
@@ -37,15 +36,19 @@ class mainPage2: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    func realTime(){
-        var uid = Auth.auth().currentUser!.uid
-        refr.collection("iOS").document(uid).setData(["Phone No":mobileNoTxt.text!,"Password": passwordTxt.text!])
-        print("done")
+    func showDataInFire(){
+        refr.collection("user").addDocument(data: ["Mobile no": mobileNoTxt.text!, "Password": passwordTxt.text!])
     }
    
     @IBAction func nextButtonAction(_ sender: Any) {
-        realTime()
+        showDataInFire()
     }
    
 
 }
+
+
+
+//var uid = Auth.auth().currentUser!.uid
+//refr.collection("iOS").document(uid).setData(["Phone No":mobileNoTxt.text!,"Password": passwordTxt.text!])
+//print("done")
