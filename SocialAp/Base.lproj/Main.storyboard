@@ -446,10 +446,10 @@
             </objects>
             <point key="canvasLocation" x="2356" y="-3072"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting Page-->
         <scene sceneID="TH9-dp-Wtu">
             <objects>
-                <viewController id="J4M-OA-NvO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingPage" id="J4M-OA-NvO" customClass="SettingPage" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oPZ-BY-fdL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

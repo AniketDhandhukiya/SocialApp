@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3262A0442A8F6FAF0065F019 /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262A0432A8F6FAF0065F019 /* SettingPage.swift */; };
 		97C947E1CC87EC8DA9F37CAA /* Pods_SocialAp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83BCE021D3C4DA8C99D04D4 /* Pods_SocialAp.framework */; };
 		B3EC66BD9AC91E678313F250 /* Pods_SocialAp_SocialApUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16780696F71C6D373C5FE01 /* Pods_SocialAp_SocialApUITests.framework */; };
 		C2BEC63F2A8E288A0001B9EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2BEC63E2A8E288A0001B9EC /* GoogleService-Info.plist */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		038CCA74D8E61B9D53BBDACA /* Pods-SocialAp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialAp.debug.xcconfig"; path = "Target Support Files/Pods-SocialAp/Pods-SocialAp.debug.xcconfig"; sourceTree = "<group>"; };
 		1EF4FFFB1584A35F0473FC0D /* Pods-SocialAp-SocialApUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialAp-SocialApUITests.release.xcconfig"; path = "Target Support Files/Pods-SocialAp-SocialApUITests/Pods-SocialAp-SocialApUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3262A0432A8F6FAF0065F019 /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
 		91DC704792249E7C02D337B9 /* Pods-SocialApTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApTests.release.xcconfig"; path = "Target Support Files/Pods-SocialApTests/Pods-SocialApTests.release.xcconfig"; sourceTree = "<group>"; };
 		A09E5BFBE3D4F6365518EBDA /* Pods-SocialAp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialAp.release.xcconfig"; path = "Target Support Files/Pods-SocialAp/Pods-SocialAp.release.xcconfig"; sourceTree = "<group>"; };
 		A83BCE021D3C4DA8C99D04D4 /* Pods_SocialAp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialAp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +169,7 @@
 				C2F50CA52A8E1E6000D5962F /* SceneDelegate.swift */,
 				C2F50CA72A8E1E6000D5962F /* ViewController.swift */,
 				C2F50CA92A8E1E6000D5962F /* Main.storyboard */,
+				3262A0432A8F6FAF0065F019 /* SettingPage.swift */,
 				C2BEC6542A8E2CCF0001B9EC /* tabBar.swift */,
 				C2BEC6522A8E2C960001B9EC /* reelsPage.swift */,
 				C2BEC6502A8E2C790001B9EC /* NewPost.swift */,
@@ -454,6 +457,7 @@
 				C2F50CA42A8E1E6000D5962F /* AppDelegate.swift in Sources */,
 				C2BEC6472A8E29710001B9EC /* mainPage2.swift in Sources */,
 				C2BEC6512A8E2C790001B9EC /* NewPost.swift in Sources */,
+				3262A0442A8F6FAF0065F019 /* SettingPage.swift in Sources */,
 				C2F50CA62A8E1E6000D5962F /* SceneDelegate.swift in Sources */,
 				C2BEC6492A8E29860001B9EC /* mainPage3.swift in Sources */,
 				C2BEC6572A8E2D090001B9EC /* infoForSignup.swift in Sources */,
