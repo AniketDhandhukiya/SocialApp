@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Qm-eI-BaX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -12,7 +12,7 @@
         <!--Main View-->
         <scene sceneID="8AD-38-bdv">
             <objects>
-                <viewController storyboardIdentifier="mainView" id="7j4-uf-WgZ" customClass="mainView" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainView" id="7j4-uf-WgZ" customClass="mainView" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SJY-Rq-NFC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCellForStory" reuseIdentifier="cellForStory" id="v6H-WM-SCD" customClass="CollectionViewCellForStory" customModule="instagram" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCellForStory" reuseIdentifier="cellForStory" id="v6H-WM-SCD" customClass="CollectionViewCellForStory" customModule="SocialAp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="-0.66666666666666663" width="99" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="i7j-41-Mjf">
@@ -91,7 +91,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCellForPost" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="cellForPost" id="VUF-2F-qYk" customClass="CollectionViewCellForPost" customModule="instagram" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCellForPost" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="cellForPost" id="VUF-2F-qYk" customClass="CollectionViewCellForPost" customModule="SocialAp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="392" height="539"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mU5-lr-3iU">
@@ -176,12 +176,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FKr-Zq-kq8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2975" y="-1408"/>
+            <point key="canvasLocation" x="1393" y="-668"/>
         </scene>
         <!--Search Page-->
         <scene sceneID="T89-Rr-pSM">
             <objects>
-                <viewController storyboardIdentifier="searchPage" id="ago-3B-7vU" customClass="searchPage" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchPage" id="ago-3B-7vU" customClass="searchPage" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5QB-Wh-Uta">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCellForSearch" reuseIdentifier="cellForSearch" id="b0o-yj-itu" customClass="CollectionViewCellForSearch" customModule="instagram" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCellForSearch" reuseIdentifier="cellForSearch" id="b0o-yj-itu" customClass="CollectionViewCellForSearch" customModule="SocialAp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="101" height="102"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bGc-50-JMf">
@@ -237,12 +237,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wQ-0a-ZYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2974.8091603053435" y="-763.38028169014092"/>
+            <point key="canvasLocation" x="1392" y="25"/>
         </scene>
         <!--New Post-->
         <scene sceneID="7Qa-pT-XEm">
             <objects>
-                <viewController storyboardIdentifier="NewPost" id="pjy-jH-ns9" customClass="NewPost" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewPost" id="pjy-jH-ns9" customClass="NewPost" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IBw-r9-lTY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,12 +294,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12r-Eq-Zj0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2974.8091603053435" y="-117.60563380281691"/>
+            <point key="canvasLocation" x="1392" y="701"/>
         </scene>
         <!--Reels Page-->
         <scene sceneID="oom-Dz-Xkx">
             <objects>
-                <viewController storyboardIdentifier="reelsPage" id="GUU-bV-xsU" customClass="reelsPage" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="reelsPage" id="GUU-bV-xsU" customClass="reelsPage" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IQe-yJ-82B">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -315,7 +315,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCellForReels" reuseIdentifier="cellForReels" id="Bzf-DK-4ic" customClass="CollectionViewCellForReels" customModule="instagram" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCellForReels" reuseIdentifier="cellForReels" id="Bzf-DK-4ic" customClass="CollectionViewCellForReels" customModule="SocialAp" customModuleProvider="target">
                                         <rect key="frame" x="0.66666666666666663" y="0.0" width="392" height="665"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R7R-kK-RPc">
@@ -341,12 +341,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTR-ou-Sgv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2974.8091603053435" y="531.69014084507046"/>
+            <point key="canvasLocation" x="1392" y="1391"/>
         </scene>
         <!--Info For Signup-->
         <scene sceneID="ac7-VW-bEn">
             <objects>
-                <viewController storyboardIdentifier="infoForSignup" id="FOf-h6-QlK" customClass="infoForSignup" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="infoForSignup" id="FOf-h6-QlK" customClass="infoForSignup" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qEs-DX-2Da">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -464,7 +464,7 @@
         <!--Previous Login-->
         <scene sceneID="J68-o9-YbS">
             <objects>
-                <viewController storyboardIdentifier="previousLogin" id="u5q-xn-5eH" customClass="previousLogin" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="previousLogin" id="u5q-xn-5eH" customClass="previousLogin" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2XM-8N-n1x">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -520,12 +520,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNb-W8-xJT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981" y="-721"/>
+            <point key="canvasLocation" x="-216" y="-668"/>
         </scene>
         <!--Main Page-->
         <scene sceneID="laG-x9-nYO">
             <objects>
-                <viewController storyboardIdentifier="mainPage" id="IfY-s8-g1s" customClass="mainPage" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainPage" id="IfY-s8-g1s" customClass="mainPage" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sFG-aj-wmy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -587,7 +587,7 @@
         <!--Sign In Page-->
         <scene sceneID="Vub-PD-Hvw">
             <objects>
-                <viewController storyboardIdentifier="signInPage" id="fFg-WG-H4v" customClass="signInPage" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signInPage" id="fFg-WG-H4v" customClass="signInPage" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OVk-7y-Cv9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -627,6 +627,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up With Facebook">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="sighupButtonAction:" destination="fFg-WG-H4v" eventType="touchUpInside" id="iwE-kt-6xY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7q-SB-GwX">
                                 <rect key="frame" x="16" y="455" width="361" height="45"/>
@@ -723,7 +726,7 @@
         <!--Main Page2-->
         <scene sceneID="rfy-4P-A0d">
             <objects>
-                <viewController storyboardIdentifier="mainPage2" id="iz1-UQ-N9j" customClass="mainPage2" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainPage2" id="iz1-UQ-N9j" customClass="mainPage2" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7rk-BO-1QA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -796,14 +799,14 @@
                                     <action selector="backBtn:" destination="iz1-UQ-N9j" eventType="touchUpInside" id="NAg-lP-s5S"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J1h-m6-hNM">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Mobile No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J1h-m6-hNM">
                                 <rect key="frame" x="122" y="227" width="255" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92845708130000004" green="0.93188983199999997" blue="0.95584470030000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJv-Ob-rMi">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJv-Ob-rMi">
                                 <rect key="frame" x="16" y="286" width="361" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92845708130000004" green="0.93188983199999997" blue="0.95584470030000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -836,7 +839,7 @@
         <!--Main Page3-->
         <scene sceneID="WaB-uG-Iai">
             <objects>
-                <viewController storyboardIdentifier="mainPage3" id="bYZ-Np-JuG" customClass="mainPage3" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainPage3" id="bYZ-Np-JuG" customClass="mainPage3" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gZw-1X-6Hj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -883,14 +886,14 @@
                                     <action selector="nextButtonAction:" destination="bYZ-Np-JuG" eventType="touchUpInside" id="Syz-LD-gf6"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m82-Dm-3Ty">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m82-Dm-3Ty">
                                 <rect key="frame" x="15" y="226" width="361" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92845708130000004" green="0.93188983199999997" blue="0.95584470030000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BOy-Uh-koF">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BOy-Uh-koF">
                                 <rect key="frame" x="15" y="281" width="362" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92845708130000004" green="0.93188983199999997" blue="0.95584470030000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -909,6 +912,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSR-cI-hc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1203.8167938931297" y="-1473.2394366197184"/>
+        </scene>
+        <!--Main Page4-->
+        <scene sceneID="Rdb-zH-E0Y">
+            <objects>
+                <viewController storyboardIdentifier="mainPage4" id="RT5-aD-93y" customClass="mainPage4" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="frm-nw-cJ5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Confirmation Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqO-Ms-N7u">
+                                <rect key="frame" x="16" y="102" width="361" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the confirmation code we sent to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMk-0W-k2R">
+                                <rect key="frame" x="16" y="158" width="361" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="your Email." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1j-6e-4zD">
+                                <rect key="frame" x="16" y="190" width="194" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2g-XC-6N8">
+                                <rect key="frame" x="208" y="186" width="169" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resend code.">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmation Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UBw-g3-2Ji">
+                                <rect key="frame" x="16" y="261" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92845708130000004" green="0.93188983199999997" blue="0.95584470030000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4J-HV-3FY">
+                                <rect key="frame" x="16" y="59" width="50" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="RT5-aD-93y" eventType="touchUpInside" id="u4i-mD-VWr"/>
+                                    <action selector="backBtn:" destination="iz1-UQ-N9j" eventType="touchUpInside" id="xew-Er-6Zq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VrZ-Tt-mz3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dj3-wj-100" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875.5725190839694" y="-1473.2394366197184"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l7K-gn-FyK">
@@ -930,7 +996,7 @@
         <!--Tab Bar-->
         <scene sceneID="pZe-dr-NCH">
             <objects>
-                <tabBarController storyboardIdentifier="tabBar" automaticallyAdjustsScrollViewInsets="NO" id="S07-4c-qM1" customClass="tabBar" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" automaticallyAdjustsScrollViewInsets="NO" id="S07-4c-qM1" customClass="tabBar" customModule="SocialAp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="p69-Wt-FuW"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h01-0e-ItI">
@@ -948,7 +1014,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HV7-hb-XbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="-32"/>
+            <point key="canvasLocation" x="-216" y="25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a26-Vm-84N">
@@ -967,7 +1033,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="you-8A-BB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="-1408"/>
+            <point key="canvasLocation" x="534" y="-668"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="euX-dP-JHF">
@@ -986,7 +1052,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zvs-Lb-2Lv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="-763"/>
+            <point key="canvasLocation" x="534" y="25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TXO-df-AEF">
@@ -1005,7 +1071,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGb-yM-Xag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="-117"/>
+            <point key="canvasLocation" x="534" y="702"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nqE-X5-ey1">
@@ -1024,7 +1090,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlo-VA-ooG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="532"/>
+            <point key="canvasLocation" x="534" y="1391"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nyD-cw-wIc">
@@ -1042,7 +1108,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z43-yX-CJq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="1180"/>
+            <point key="canvasLocation" x="534" y="2074"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PGI-WA-1DM">
@@ -1169,7 +1235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zw-ax-NSA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2975" y="1180"/>
+            <point key="canvasLocation" x="1392" y="2074"/>
         </scene>
     </scenes>
     <resources>
