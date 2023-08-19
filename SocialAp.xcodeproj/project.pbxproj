@@ -10,6 +10,8 @@
 		97C947E1CC87EC8DA9F37CAA /* Pods_SocialAp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83BCE021D3C4DA8C99D04D4 /* Pods_SocialAp.framework */; };
 		B3EC66BD9AC91E678313F250 /* Pods_SocialAp_SocialApUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16780696F71C6D373C5FE01 /* Pods_SocialAp_SocialApUITests.framework */; };
 		C23DACFB2A8F7461005A1322 /* mainPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23DACFA2A8F7461005A1322 /* mainPage4.swift */; };
+		C25665B62A90A1A500B20641 /* CollectionViewCellForStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25665B52A90A1A500B20641 /* CollectionViewCellForStory.swift */; };
+		C25665B82A90A25500B20641 /* CollectionViewCellForPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25665B72A90A25500B20641 /* CollectionViewCellForPost.swift */; };
 		C2BEC63F2A8E288A0001B9EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2BEC63E2A8E288A0001B9EC /* GoogleService-Info.plist */; };
 		C2BEC6432A8E29430001B9EC /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BEC6422A8E29430001B9EC /* mainPage.swift */; };
 		C2BEC6452A8E295C0001B9EC /* signInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BEC6442A8E295C0001B9EC /* signInPage.swift */; };
@@ -59,6 +61,8 @@
 		A83BCE021D3C4DA8C99D04D4 /* Pods_SocialAp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialAp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE85FD1423AC7DC7E6A71851 /* Pods_SocialApTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialApTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23DACFA2A8F7461005A1322 /* mainPage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage4.swift; sourceTree = "<group>"; };
+		C25665B52A90A1A500B20641 /* CollectionViewCellForStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForStory.swift; sourceTree = "<group>"; };
+		C25665B72A90A25500B20641 /* CollectionViewCellForPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForPost.swift; sourceTree = "<group>"; };
 		C2BEC63E2A8E288A0001B9EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C2BEC6422A8E29430001B9EC /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
 		C2BEC6442A8E295C0001B9EC /* signInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInPage.swift; sourceTree = "<group>"; };
@@ -169,12 +173,14 @@
 				C2F50CA52A8E1E6000D5962F /* SceneDelegate.swift */,
 				C2F50CA72A8E1E6000D5962F /* ViewController.swift */,
 				C2F50CA92A8E1E6000D5962F /* Main.storyboard */,
+				C25665B72A90A25500B20641 /* CollectionViewCellForPost.swift */,
 				C2BEC6542A8E2CCF0001B9EC /* tabBar.swift */,
 				C23DACFA2A8F7461005A1322 /* mainPage4.swift */,
 				C2BEC6522A8E2C960001B9EC /* reelsPage.swift */,
 				C2BEC6502A8E2C790001B9EC /* NewPost.swift */,
 				C2BEC64E2A8E2C690001B9EC /* searchPage.swift */,
 				C2BEC64C2A8E2C4D0001B9EC /* mainView.swift */,
+				C25665B52A90A1A500B20641 /* CollectionViewCellForStory.swift */,
 				C2BEC6562A8E2D090001B9EC /* infoForSignup.swift */,
 				C2BEC6482A8E29860001B9EC /* mainPage3.swift */,
 				C2BEC6462A8E29710001B9EC /* mainPage2.swift */,
@@ -450,6 +456,8 @@
 				C2BEC64D2A8E2C4D0001B9EC /* mainView.swift in Sources */,
 				C2BEC6452A8E295C0001B9EC /* signInPage.swift in Sources */,
 				C2BEC6432A8E29430001B9EC /* mainPage.swift in Sources */,
+				C25665B62A90A1A500B20641 /* CollectionViewCellForStory.swift in Sources */,
+				C25665B82A90A25500B20641 /* CollectionViewCellForPost.swift in Sources */,
 				C2F50CA82A8E1E6000D5962F /* ViewController.swift in Sources */,
 				C2F50CAE2A8E1E6000D5962F /* SocialAp.xcdatamodeld in Sources */,
 				C23DACFB2A8F7461005A1322 /* mainPage4.swift in Sources */,
