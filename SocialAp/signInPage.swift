@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseCore
 
 class signInPage: UIViewController {
     @IBOutlet weak var signUpBtn: UIButton!
@@ -31,7 +33,7 @@ class signInPage: UIViewController {
     }
     
     @IBAction func loginButtonAction(_ sender: Any) {
-        navigatioForLoginButton()
+        signIn()
     }
     @IBAction func sighupButtonAction(_ sender: Any) {
         navigatioForSignupButton()
@@ -49,6 +51,23 @@ class signInPage: UIViewController {
     
     @IBAction func backBtn(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    func alert(message:String){
+        let alert = UIAlertController(title: "ERROR", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+    
+    func signIn(){
+        Auth.auth().signIn(withEmail: phoneOrEmailTextField.text!, password: passwordTextField.text!) {[self] authDataResult, error in
+            if error == nil {
+                navigatioForLoginButton()
+            }else{
+                alert(message: "\(error!.localizedDescription)")
+            }
+        }
+        
     }
     
 

@@ -47,8 +47,8 @@ class mainPage2: UIViewController {
 // ******* mobile authentication ***** //
     
     func showDataInFire(){
-        let uid = Auth.auth().currentUser!.uid
-        refr.collection("user").document(uid).setData(["Mobile no": null, "Password": passwordTxt.text!]) {[self] error in
+        //let uid = Auth.auth().currentUser!.uid
+        refr.collection("user").addDocument(data: ["Mobile no": null, "Password": passwordTxt.text!]) {[self] error in
             if error == nil{
                 if mobileNoTxt.text! != "" {
                     let navigate = storyboard?.instantiateViewController(withIdentifier: "mainPage4") as! mainPage4
