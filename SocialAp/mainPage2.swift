@@ -12,7 +12,6 @@ import FirebaseAuth
 import FirebaseFirestore
 
 class mainPage2: UIViewController {
-//    var refr: Firestore!
    var refr = Firestore.firestore()
 
     @IBOutlet weak var passwordTxt: UITextField!
@@ -20,6 +19,7 @@ class mainPage2: UIViewController {
     @IBOutlet weak var drpdwn: DropDown!
     
     var null = ""
+    var ottp = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
