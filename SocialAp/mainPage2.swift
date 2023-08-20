@@ -10,6 +10,7 @@ import iOSDropDown
 import FirebaseCore
 import FirebaseAuth
 import FirebaseFirestore
+import UserNotifications
 
 class mainPage2: UIViewController {
    var refr = Firestore.firestore()
@@ -19,7 +20,6 @@ class mainPage2: UIViewController {
     @IBOutlet weak var drpdwn: DropDown!
     
     var null = ""
-    var ottp = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,8 +52,10 @@ class mainPage2: UIViewController {
             if error == nil{
                 if mobileNoTxt.text! != "" {
                     let navigate = storyboard?.instantiateViewController(withIdentifier: "mainPage4") as! mainPage4
+                    navigate.number = null
                     navigationController?.pushViewController(navigate, animated: true)
                     verifyOtp()
+                    popUp()
                 }
             }
             else{
@@ -65,6 +67,7 @@ class mainPage2: UIViewController {
     func verifyOtp(){
         PhoneAuthProvider.provider().verifyPhoneNumber(null, uiDelegate: nil) { verificationId, error in
             if error == nil{
+                UserDefaults.standard.set(verificationId, forKey: "id")
                 print("done")
             }else{
                 print(error!.localizedDescription)
@@ -74,7 +77,7 @@ class mainPage2: UIViewController {
     
     func verificationOtp(token:String,otp:String) {
         let credential = PhoneAuthProvider.provider().credential(withVerificationID: token, verificationCode: otp)
-        
+
         Auth.auth().signIn(with: credential){authresult,error in
             if error == nil {
                 print("Ok")
@@ -83,6 +86,33 @@ class mainPage2: UIViewController {
                 print(error?.localizedDescription)
             }
         }
+    }
+    
+    func popUp(){
+        let authoptions = UNAuthorizationOptions(arrayLiteral:.alert,.badge,.sound)
+                UNUserNotificationCenter.current().requestAuthorization(options: authoptions) { (success , error) in print("error:", error?.localizedDescription)
+                    
+                }
+                
+                let content = UNMutableNotificationContent()
+                content.title = "OTP-SocialAPP"
+                content.body = "hello ios developer"
+                content.badge = 1
+                
+                let trigger = UNTimeIntervalNotificationTrigger(
+                    timeInterval: 5,
+                repeats: false
+                
+                )
+                let id = UUID().uuidString
+                let request = UNNotificationRequest(identifier: id, content: content, trigger: trigger)
+                let notification = UNUserNotificationCenter.current()
+                notification.add(request) { error in
+                    print(error?.localizedDescription)
+                    
+                }
+
+
     }
 // ******* Alert ***** //
     

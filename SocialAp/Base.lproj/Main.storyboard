@@ -957,6 +957,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Resend code.">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ResendCode:" destination="RT5-aD-93y" eventType="touchUpInside" id="WIQ-fk-4TF"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmation Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UBw-g3-2Ji">
                                 <rect key="frame" x="16" y="261" width="361" height="34"/>
@@ -975,10 +978,23 @@
                                     <action selector="backBtn:" destination="iz1-UQ-N9j" eventType="touchUpInside" id="xew-Er-6Zq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6D-w1-9QW">
+                                <rect key="frame" x="16" y="337" width="361" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <connections>
+                                    <action selector="nextButtonAction:" destination="bYZ-Np-JuG" eventType="touchUpInside" id="tB7-pN-IZJ"/>
+                                    <action selector="submitAction:" destination="RT5-aD-93y" eventType="touchUpInside" id="bx6-jS-eVH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VrZ-Tt-mz3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="codeTxt" destination="UBw-g3-2Ji" id="gnB-ga-RnJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dj3-wj-100" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
