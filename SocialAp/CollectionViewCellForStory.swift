@@ -9,4 +9,5 @@ import UIKit
 
 class CollectionViewCellForStory: UICollectionViewCell {
     @IBOutlet weak var storyImage: UIImageView!
+    
 }

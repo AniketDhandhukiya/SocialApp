@@ -47,4 +47,44 @@ class mainView: UIViewController, UICollectionViewDelegate,UICollectionViewDataS
         return CGSize(width: 392, height: 542)
     }
    
+   
 }
+
+
+
+
+
+
+//func uplodeImage(_ image:UIImage,complition:@escaping((_ url:URL?)->())){
+//        let storageRef = Storage.storage().reference().child("UserImages.png")
+//        let imageData = imageOutlet.image?.pngData()
+//        let metaData = StorageMetadata()
+//        metaData.contentType = "image/png"
+//
+//        storageRef.putData(imageData!,metadata: metaData) { metaData, error in
+//            if error == nil{
+//                print("Success")
+//                storageRef.downloadURL { url, error in
+//                    complition(url)
+//                }
+//            }
+//            else{
+//                print("Error !")
+//            }
+//        }
+//    }
+//
+//    func saveImage(profileImageUrl:URL,complition:@escaping((_ url:URL?)->())){
+//        let directory = ["BirthDate":birthDateTextField.text!,"Username":usertextField.text!,"Name":nameTextField.text!,"Bio":bioTextFiled.text!,"Number":numberTextFiled.text!,"Gender":genderTextFiled.text!,"Email": Auth.auth().currentUser?.email,"ProfileImageUrl":profileImageUrl.absoluteString] as! [String: Any]
+//
+//        self.fir.collection("UserProfile").document(userUid!).setData(directory)
+//
+//    }
+//func saveFirData() {
+//       self.uplodeImage(self.imageOutlet.image!) { url in
+//           self.saveImage(profileImageUrl: url!) { success in
+//               if success != nil {
+//                   print("Yehh")
+//               }
+//           }
+//       }
