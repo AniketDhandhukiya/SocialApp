@@ -54,8 +54,7 @@ class mainPage2: UIViewController {
                     let navigate = storyboard?.instantiateViewController(withIdentifier: "mainPage4") as! mainPage4
                     navigate.number = null
                     navigationController?.pushViewController(navigate, animated: true)
-                    verifyOtp()
-                    popUp()
+                    sendOtp()
                 }
             }
             else{
@@ -64,10 +63,12 @@ class mainPage2: UIViewController {
         }
     }
    
-    func verifyOtp(){
-        PhoneAuthProvider.provider().verifyPhoneNumber(null, uiDelegate: nil) { verificationId, error in
+    func sendOtp(){
+        PhoneAuthProvider.provider().verifyPhoneNumber( null, uiDelegate: nil) { [self] verificationId, error in
             if error == nil{
-                UserDefaults.standard.set(verificationId, forKey: "id")
+                let navigate = self.storyboard?.instantiateViewController(identifier: "mainPage4") as! mainPage4
+                navigate.id = verificationId!
+                self.navigationController?.pushViewController(navigate, animated: true)
                 print("done")
             }else{
                 print(error!.localizedDescription)
@@ -88,32 +89,7 @@ class mainPage2: UIViewController {
         }
     }
     
-    func popUp(){
-        let authoptions = UNAuthorizationOptions(arrayLiteral:.alert,.badge,.sound)
-                UNUserNotificationCenter.current().requestAuthorization(options: authoptions) { (success , error) in print("error:", error?.localizedDescription)
-                    
-                }
-                
-                let content = UNMutableNotificationContent()
-                content.title = "OTP-SocialAPP"
-                content.body = "hello ios developer"
-                content.badge = 1
-                
-                let trigger = UNTimeIntervalNotificationTrigger(
-                    timeInterval: 5,
-                repeats: false
-                
-                )
-                let id = UUID().uuidString
-                let request = UNNotificationRequest(identifier: id, content: content, trigger: trigger)
-                let notification = UNUserNotificationCenter.current()
-                notification.add(request) { error in
-                    print(error?.localizedDescription)
-                    
-                }
-
-
-    }
+    
 // ******* Alert ***** //
     
     func showAlert(messege: String,title: String){

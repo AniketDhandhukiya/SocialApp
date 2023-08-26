@@ -12,6 +12,7 @@ pod 'FirebaseCore'
 pod 'FirebaseDatabase'
 pod 'Firebase' 
 pod 'iOSDropDown'
+pod 'GoogleSignIn'
 
 
 

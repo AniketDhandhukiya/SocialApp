@@ -8,13 +8,14 @@
 import UIKit
 import FirebaseAuth
 import FirebaseCore
+import GoogleSignIn
 
 class signInPage: UIViewController {
     @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var phoneOrEmailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginBtn.layer.cornerRadius = 9
@@ -35,10 +36,11 @@ class signInPage: UIViewController {
     @IBAction func loginButtonAction(_ sender: Any) {
         signIn()
     }
-    @IBAction func sighupButtonAction(_ sender: Any) {
+    
+    
+    @IBAction func SignUpBtn(_ sender: Any) {
         navigatioForSignupButton()
     }
-    
     func navigatioForLoginButton(){
         let navigate = storyboard?.instantiateViewController(withIdentifier: "tabBar") as! tabBar
         navigationController?.pushViewController(navigate, animated: true)
@@ -70,5 +72,23 @@ class signInPage: UIViewController {
         
     }
     
-
+    @IBAction func signInFb(_ sender: Any) {
+        googleSignIn()
+    }
+    func googleSignIn(){
+        guard let clientID = FirebaseApp.app()?.options.clientID else{return}
+        let configure = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = configure
+        GIDSignIn.sharedInstance.signIn(withPresenting: self){[unowned self] result, error in
+            guard error == nil else{
+                return
+            }
+            guard let user = result?.user,
+                  let idToken = user.idToken?.tokenString
+            else{
+                return
+            }
+            let crendential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
+        }
+    }
 }
