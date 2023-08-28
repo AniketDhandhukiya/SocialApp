@@ -21,7 +21,7 @@ class searchPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = cvForSearch.dequeueReusableCell(withReuseIdentifier: "CollectionViewCellForSearch", for: indexPath) as! CollectionViewCellForSearch
+        let cell = cvForSearch.dequeueReusableCell(withReuseIdentifier: "cellForSearch", for: indexPath) as! CollectionViewCellForSearch
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

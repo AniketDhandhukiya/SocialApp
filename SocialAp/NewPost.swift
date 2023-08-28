@@ -8,6 +8,7 @@ import FirebaseFirestore
 
 class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerControllerDelegate {
 
+    @IBOutlet weak var vieww: UIView!
     @IBOutlet weak var ImageForUpload: UIImageView!
     
     var ref: DatabaseReference!
@@ -21,6 +22,11 @@ class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerC
         
     }
     
+    @IBAction func nextBtnAction(_ sender: Any) {
+        let nav = storyboard?.instantiateViewController(identifier: "captionPost") as! captionPost
+        
+        navigationController?.pushViewController(nav, animated: true)
+    }
     @IBAction func gallaryButtonAction(_ sender: Any) {
         openGallery()
     }
