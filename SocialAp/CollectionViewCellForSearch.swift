@@ -9,4 +9,5 @@ import UIKit
 
 class CollectionViewCellForSearch: UICollectionViewCell {
     
+    @IBOutlet weak var imageForPost: UIImageView!
 }

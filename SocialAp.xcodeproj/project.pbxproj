@@ -11,8 +11,9 @@
 		324C122E2A9C69C200DE0380 /* SettingPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C122D2A9C69C200DE0380 /* SettingPageCell.swift */; };
 		97C947E1CC87EC8DA9F37CAA /* Pods_SocialAp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83BCE021D3C4DA8C99D04D4 /* Pods_SocialAp.framework */; };
 		B3EC66BD9AC91E678313F250 /* Pods_SocialAp_SocialApUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16780696F71C6D373C5FE01 /* Pods_SocialAp_SocialApUITests.framework */; };
+		C23B06BA2A9CB7D40086230A /* profilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B06B92A9CB7D40086230A /* profilePage.swift */; };
+		C23B06BC2A9CB8010086230A /* cellProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B06BB2A9CB8010086230A /* cellProfilePage.swift */; };
 		C23DACFB2A8F7461005A1322 /* mainPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23DACFA2A8F7461005A1322 /* mainPage4.swift */; };
-		C252460E2A9C930F00120AA0 /* captionPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C252460D2A9C930F00120AA0 /* captionPost.swift */; };
 		C25665B62A90A1A500B20641 /* CollectionViewCellForStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25665B52A90A1A500B20641 /* CollectionViewCellForStory.swift */; };
 		C25665B82A90A25500B20641 /* CollectionViewCellForPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25665B72A90A25500B20641 /* CollectionViewCellForPost.swift */; };
 		C2BEC63F2A8E288A0001B9EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2BEC63E2A8E288A0001B9EC /* GoogleService-Info.plist */; };
@@ -67,8 +68,9 @@
 		A09E5BFBE3D4F6365518EBDA /* Pods-SocialAp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialAp.release.xcconfig"; path = "Target Support Files/Pods-SocialAp/Pods-SocialAp.release.xcconfig"; sourceTree = "<group>"; };
 		A83BCE021D3C4DA8C99D04D4 /* Pods_SocialAp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialAp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE85FD1423AC7DC7E6A71851 /* Pods_SocialApTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialApTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23B06B92A9CB7D40086230A /* profilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePage.swift; sourceTree = "<group>"; };
+		C23B06BB2A9CB8010086230A /* cellProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellProfilePage.swift; sourceTree = "<group>"; };
 		C23DACFA2A8F7461005A1322 /* mainPage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage4.swift; sourceTree = "<group>"; };
-		C252460D2A9C930F00120AA0 /* captionPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = captionPost.swift; sourceTree = "<group>"; };
 		C25665B52A90A1A500B20641 /* CollectionViewCellForStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForStory.swift; sourceTree = "<group>"; };
 		C25665B72A90A25500B20641 /* CollectionViewCellForPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForPost.swift; sourceTree = "<group>"; };
 		C2BEC63E2A8E288A0001B9EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -157,7 +159,6 @@
 		C2F50C972A8E1E6000D5962F = {
 			isa = PBXGroup;
 			children = (
-				C252460D2A9C930F00120AA0 /* captionPost.swift */,
 				C2F50CA22A8E1E6000D5962F /* SocialAp */,
 				C2F50CBC2A8E1E6200D5962F /* SocialApTests */,
 				C2F50CC62A8E1E6200D5962F /* SocialApUITests */,
@@ -187,7 +188,9 @@
 				324C122B2A9C697100DE0380 /* SettingPage.swift */,
 				324C122D2A9C69C200DE0380 /* SettingPageCell.swift */,
 				C25665B72A90A25500B20641 /* CollectionViewCellForPost.swift */,
+				C23B06BB2A9CB8010086230A /* cellProfilePage.swift */,
 				C2BEC6542A8E2CCF0001B9EC /* tabBar.swift */,
+				C23B06B92A9CB7D40086230A /* profilePage.swift */,
 				C2F7754E2A9C6379009B1807 /* CollectionViewCellForSearch.swift */,
 				C23DACFA2A8F7461005A1322 /* mainPage4.swift */,
 				C2F775502A9C640A009B1807 /* CollectionViewCellForReels.swift */,
@@ -473,13 +476,14 @@
 				C2BEC6452A8E295C0001B9EC /* signInPage.swift in Sources */,
 				C2F775512A9C640A009B1807 /* CollectionViewCellForReels.swift in Sources */,
 				C2BEC6432A8E29430001B9EC /* mainPage.swift in Sources */,
+				C23B06BA2A9CB7D40086230A /* profilePage.swift in Sources */,
+				C23B06BC2A9CB8010086230A /* cellProfilePage.swift in Sources */,
 				C25665B62A90A1A500B20641 /* CollectionViewCellForStory.swift in Sources */,
 				C25665B82A90A25500B20641 /* CollectionViewCellForPost.swift in Sources */,
 				C2F50CA82A8E1E6000D5962F /* ViewController.swift in Sources */,
 				C2F50CAE2A8E1E6000D5962F /* SocialAp.xcdatamodeld in Sources */,
 				C2F7754F2A9C6379009B1807 /* CollectionViewCellForSearch.swift in Sources */,
 				C23DACFB2A8F7461005A1322 /* mainPage4.swift in Sources */,
-				C252460E2A9C930F00120AA0 /* captionPost.swift in Sources */,
 				324C122C2A9C697100DE0380 /* SettingPage.swift in Sources */,
 				C2BEC6552A8E2CCF0001B9EC /* tabBar.swift in Sources */,
 				C2BEC6532A8E2C960001B9EC /* reelsPage.swift in Sources */,

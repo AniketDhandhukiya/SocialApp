@@ -22,6 +22,10 @@ class mainPage: UIViewController {
         navigationController?.pushViewController(nv, animated: true)
     }
     
-
+    @IBAction func SkipB63utton(_ sender: Any) {
+        let nv = storyboard?.instantiateViewController(withIdentifier: "tabBar") as! tabBar
+        navigationController?.pushViewController(nv, animated: true)
+    }
+    
 
 }

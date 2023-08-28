@@ -13,8 +13,8 @@ pod 'FirebaseDatabase'
 pod 'Firebase' 
 pod 'iOSDropDown'
 pod 'GoogleSignIn'
-
-
+pod 'FirebaseStorage'
+pod 'SDWebImage'
 
   target 'SocialApTests' do
     inherit! :search_paths
