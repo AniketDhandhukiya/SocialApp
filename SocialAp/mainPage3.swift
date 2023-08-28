@@ -29,8 +29,6 @@ class mainPage3: UIViewController {
     
     @IBAction func nextButtonAction(_ sender: Any) {
         createAccount()
-        
-        
     }
     
     func createAccount(){
@@ -52,7 +50,7 @@ class mainPage3: UIViewController {
     }
     
     func navigation(){
-            let navigate = storyboard?.instantiateViewController(withIdentifier: "mainPage4") as! mainPage4
+            let navigate = storyboard?.instantiateViewController(withIdentifier: "signInPage") as! signInPage
             navigationController?.pushViewController(navigate, animated: true)
 
     }

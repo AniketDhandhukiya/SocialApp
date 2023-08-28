@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324C122C2A9C697100DE0380 /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C122B2A9C697100DE0380 /* SettingPage.swift */; };
+		324C122E2A9C69C200DE0380 /* SettingPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324C122D2A9C69C200DE0380 /* SettingPageCell.swift */; };
 		97C947E1CC87EC8DA9F37CAA /* Pods_SocialAp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83BCE021D3C4DA8C99D04D4 /* Pods_SocialAp.framework */; };
 		B3EC66BD9AC91E678313F250 /* Pods_SocialAp_SocialApUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16780696F71C6D373C5FE01 /* Pods_SocialAp_SocialApUITests.framework */; };
 		C23DACFB2A8F7461005A1322 /* mainPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23DACFA2A8F7461005A1322 /* mainPage4.swift */; };
@@ -33,6 +35,8 @@
 		C2F50CBE2A8E1E6200D5962F /* SocialApTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F50CBD2A8E1E6200D5962F /* SocialApTests.swift */; };
 		C2F50CC82A8E1E6200D5962F /* SocialApUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F50CC72A8E1E6200D5962F /* SocialApUITests.swift */; };
 		C2F50CCA2A8E1E6200D5962F /* SocialApUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F50CC92A8E1E6200D5962F /* SocialApUITestsLaunchTests.swift */; };
+		C2F7754F2A9C6379009B1807 /* CollectionViewCellForSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F7754E2A9C6379009B1807 /* CollectionViewCellForSearch.swift */; };
+		C2F775512A9C640A009B1807 /* CollectionViewCellForReels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F775502A9C640A009B1807 /* CollectionViewCellForReels.swift */; };
 		F23531EB2050339658F52A33 /* Pods_SocialApTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE85FD1423AC7DC7E6A71851 /* Pods_SocialApTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +60,8 @@
 /* Begin PBXFileReference section */
 		038CCA74D8E61B9D53BBDACA /* Pods-SocialAp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialAp.debug.xcconfig"; path = "Target Support Files/Pods-SocialAp/Pods-SocialAp.debug.xcconfig"; sourceTree = "<group>"; };
 		1EF4FFFB1584A35F0473FC0D /* Pods-SocialAp-SocialApUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialAp-SocialApUITests.release.xcconfig"; path = "Target Support Files/Pods-SocialAp-SocialApUITests/Pods-SocialAp-SocialApUITests.release.xcconfig"; sourceTree = "<group>"; };
+		324C122B2A9C697100DE0380 /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		324C122D2A9C69C200DE0380 /* SettingPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPageCell.swift; sourceTree = "<group>"; };
 		91DC704792249E7C02D337B9 /* Pods-SocialApTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApTests.release.xcconfig"; path = "Target Support Files/Pods-SocialApTests/Pods-SocialApTests.release.xcconfig"; sourceTree = "<group>"; };
 		A09E5BFBE3D4F6365518EBDA /* Pods-SocialAp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialAp.release.xcconfig"; path = "Target Support Files/Pods-SocialAp/Pods-SocialAp.release.xcconfig"; sourceTree = "<group>"; };
 		A83BCE021D3C4DA8C99D04D4 /* Pods_SocialAp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialAp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +94,8 @@
 		C2F50CC32A8E1E6200D5962F /* SocialApUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialApUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F50CC72A8E1E6200D5962F /* SocialApUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialApUITests.swift; sourceTree = "<group>"; };
 		C2F50CC92A8E1E6200D5962F /* SocialApUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialApUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2F7754E2A9C6379009B1807 /* CollectionViewCellForSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForSearch.swift; sourceTree = "<group>"; };
+		C2F775502A9C640A009B1807 /* CollectionViewCellForReels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForReels.swift; sourceTree = "<group>"; };
 		C5307662EB2FA85B71BDDA8C /* Pods-SocialApTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApTests.debug.xcconfig"; path = "Target Support Files/Pods-SocialApTests/Pods-SocialApTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CCDE800B4EEB4FD3AE0AB085 /* Pods-SocialAp-SocialApUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialAp-SocialApUITests.debug.xcconfig"; path = "Target Support Files/Pods-SocialAp-SocialApUITests/Pods-SocialAp-SocialApUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D16780696F71C6D373C5FE01 /* Pods_SocialAp_SocialApUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialAp_SocialApUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,9 +181,13 @@
 				C2F50CA52A8E1E6000D5962F /* SceneDelegate.swift */,
 				C2F50CA72A8E1E6000D5962F /* ViewController.swift */,
 				C2F50CA92A8E1E6000D5962F /* Main.storyboard */,
+				324C122B2A9C697100DE0380 /* SettingPage.swift */,
+				324C122D2A9C69C200DE0380 /* SettingPageCell.swift */,
 				C25665B72A90A25500B20641 /* CollectionViewCellForPost.swift */,
 				C2BEC6542A8E2CCF0001B9EC /* tabBar.swift */,
+				C2F7754E2A9C6379009B1807 /* CollectionViewCellForSearch.swift */,
 				C23DACFA2A8F7461005A1322 /* mainPage4.swift */,
+				C2F775502A9C640A009B1807 /* CollectionViewCellForReels.swift */,
 				C2BEC6522A8E2C960001B9EC /* reelsPage.swift */,
 				C2BEC6502A8E2C790001B9EC /* NewPost.swift */,
 				C2BEC64E2A8E2C690001B9EC /* searchPage.swift */,
@@ -453,14 +465,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2BEC64F2A8E2C690001B9EC /* searchPage.swift in Sources */,
+				324C122E2A9C69C200DE0380 /* SettingPageCell.swift in Sources */,
 				C2BEC64D2A8E2C4D0001B9EC /* mainView.swift in Sources */,
 				C2BEC6452A8E295C0001B9EC /* signInPage.swift in Sources */,
+				C2F775512A9C640A009B1807 /* CollectionViewCellForReels.swift in Sources */,
 				C2BEC6432A8E29430001B9EC /* mainPage.swift in Sources */,
 				C25665B62A90A1A500B20641 /* CollectionViewCellForStory.swift in Sources */,
 				C25665B82A90A25500B20641 /* CollectionViewCellForPost.swift in Sources */,
 				C2F50CA82A8E1E6000D5962F /* ViewController.swift in Sources */,
 				C2F50CAE2A8E1E6000D5962F /* SocialAp.xcdatamodeld in Sources */,
+				C2F7754F2A9C6379009B1807 /* CollectionViewCellForSearch.swift in Sources */,
 				C23DACFB2A8F7461005A1322 /* mainPage4.swift in Sources */,
+				324C122C2A9C697100DE0380 /* SettingPage.swift in Sources */,
 				C2BEC6552A8E2CCF0001B9EC /* tabBar.swift in Sources */,
 				C2BEC6532A8E2C960001B9EC /* reelsPage.swift in Sources */,
 				C2F50CA42A8E1E6000D5962F /* AppDelegate.swift in Sources */,
