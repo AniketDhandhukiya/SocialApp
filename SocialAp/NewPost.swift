@@ -15,11 +15,14 @@ class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerC
     var ref: DatabaseReference!
     var fir: Firestore!
     
+    var arrayImage = ""
+    let userUid = Auth.auth().currentUser!.uid
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ref = Database.database().reference()
         fir = Firestore.firestore()
+        print(arrayImage)
         
     }
     
@@ -27,7 +30,7 @@ class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerC
         self.uplodeImage(self.ImageForUpload.image!) { url in
             self.saveImage(profileImageUrl: url!) { success in
                 if success != nil {
-                    print("Yehh")
+                    print("yrsg")
                 }
             }
         }
@@ -65,8 +68,10 @@ class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerC
             storageRef.putData(imageData!,metadata: metaData) { metaData, error in
                 if error == nil{
                     print("Success")
-                    storageRef.downloadURL { url, error in
+                    storageRef.downloadURL {[self] url, error in
                         complition(url)
+                        
+                        
                     }
                 }
                 else{
@@ -75,12 +80,15 @@ class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerC
             }
         }
     
-        func saveImage(profileImageUrl:URL,complition:@escaping((_ url:URL?)->())){
-            let userUid = Auth.auth().currentUser!.uid
+    func saveImage(profileImageUrl:URL,complition:@escaping((_ url:URL?)->())){
+        let userUid = Auth.auth().currentUser!.uid
+        
+        
+       self.fir.collection("Post").document(userUid).parent.addDocument(data: ["Post":profileImageUrl.absoluteString])
+        
+//        ref.child("userPost").child(userUid).au.setValue(["url" : profileImageUrl.absoluteString])
+    }
     
-            self.fir.collection("Post").document(userUid).setData(["Post":profileImageUrl.absoluteString])
     
-        }
     
-   
 }

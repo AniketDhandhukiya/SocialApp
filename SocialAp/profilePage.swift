@@ -19,7 +19,9 @@ struct data {
 class profilePage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     
-
+    @IBOutlet weak var postLbl: UILabel!
+    @IBOutlet weak var mainDp: UIImageView!
+    
     @IBOutlet weak var cv: UICollectionView!
     
     var colref : CollectionReference!
@@ -28,6 +30,8 @@ class profilePage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         super.viewDidLoad()
         
         getData()
+        mainDp.layer.cornerRadius = 43
+        mainDp.layer.masksToBounds = true
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -37,11 +41,12 @@ class profilePage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = cv.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! cellProfilePage
         cell.imggg.sd_setImage(with: URL(string: array[indexPath.row].user))
+        postLbl.text = array.count.description
         return cell
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 149, height: 161)
+        return CGSize(width: 118, height: 118)
     }
     
     func getData(){
