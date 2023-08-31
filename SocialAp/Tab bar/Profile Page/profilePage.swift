@@ -62,5 +62,9 @@ class profilePage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         }
     }
     
-
+    @IBAction func settiAc(_ sender: Any) {
+        let nv = storyboard?.instantiateViewController(withIdentifier: "SettingPage") as! SettingPage
+        navigationController?.pushViewController(nv, animated: true)
+    }
+    
 }

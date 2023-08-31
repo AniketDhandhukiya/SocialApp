@@ -26,6 +26,7 @@ class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerC
         
     }
     
+   
     func saveFirData() {
         self.uplodeImage(self.ImageForUpload.image!) { url in
             self.saveImage(profileImageUrl: url!) { success in

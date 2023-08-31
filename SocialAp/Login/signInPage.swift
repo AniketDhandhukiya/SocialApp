@@ -47,7 +47,7 @@ class signInPage: UIViewController {
     }
     
     func navigatioForSignupButton(){
-        let navigate = storyboard?.instantiateViewController(withIdentifier: "infoForSignup") as! infoForSignup
+        let navigate = storyboard?.instantiateViewController(withIdentifier: "mainPage2") as! mainPage2
         navigationController?.pushViewController(navigate, animated: true)
     }
     

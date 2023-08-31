@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingPage: UIViewController {
     
@@ -14,7 +15,7 @@ class SettingPage: UIViewController {
     "Security"), UIImage (named: "Ads"), UIImage (named: "user") , UIImage (named:
     "Help"), UIImage (named: "About"), UIImage (named: "Theme" )]
     
-    var nameArray = ["Follow and invitefriends", "Notifications" ,"Creator","Privacy","Payments","Security","Ads","Accounts", "Help","About","Theme"]
+    var nameArray = ["Follow and invitefriends", "Notifications" ,"Creator","Privacy","Payments","Security","Ads","Accounts", "Help","About","Log out"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,20 @@ extension SettingPage:
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
     UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    return CGSize(width: 375, height: 52)
+    return CGSize(width: 375, height: 45)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 10{
+            print(".....")
+            do {
+                try Auth.auth().signOut()
+                let navigate = storyboard?.instantiateViewController(withIdentifier: "mainPage") as! mainPage
+                navigationController?.pushViewController(navigate, animated: true)
+            }
+            catch{
+                print(error.localizedDescription)
+            }
+        }
     }
 }
