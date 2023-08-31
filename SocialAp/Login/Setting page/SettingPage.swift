@@ -13,7 +13,7 @@ class SettingPage: UIViewController {
     var imageName = [UIImage (named: "Follow"), UIImage (named: "Notifications"), UIImage (named:
     "Creator"), UIImage (named: "Privacy"), UIImage (named: "Payments"), UIImage (named:
     "Security"), UIImage (named: "Ads"), UIImage (named: "user") , UIImage (named:
-    "Help"), UIImage (named: "About"), UIImage (named: "Theme" )]
+    "Help"), UIImage (named: "About"), UIImage (named: "userrrr" )]
     
     var nameArray = ["Follow and invitefriends", "Notifications" ,"Creator","Privacy","Payments","Security","Ads","Accounts", "Help","About","Log out"]
 
@@ -34,6 +34,10 @@ extension SettingPage:
         indexPath) as! SettingPageCell
         cell.iconImage.image = imageName [indexPath.row]
         cell.nameLabel.text = nameArray[indexPath.row]
+        if indexPath.row == 10{
+         cell.nameLabel.textColor = .red
+            
+        }
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
