@@ -9,12 +9,12 @@ class mainPage3: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var repasswordTxt: UITextField!
     var ref: DatabaseReference!
-    var refr: Firestore!
+    var fir: Firestore!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
-        refr = Firestore.firestore()
+        fir = Firestore.firestore()
 
     }
     
@@ -28,6 +28,7 @@ class mainPage3: UIViewController {
     }
     
     @IBAction func nextButtonAction(_ sender: Any) {
+       
         createAccount()
     }
     
@@ -37,7 +38,10 @@ class mainPage3: UIViewController {
             Auth.auth().createUser(withEmail: emailTxt.text!, password: passwordTxt.text!) {[self] authDataResult, error in
                 if error == nil{
                     var uid = authDataResult?.user.uid
-                    refr.collection("user").document(uid!).setData(["E-Mail": emailTxt.text!,"password": passwordTxt.text!])
+                    fir.collection("user").document(uid!).setData(["E-Mail": emailTxt.text!,"password": passwordTxt.text!])
+                    
+                    fir.collection("userProfile").document(authDataResult!.user.uid).setData(["email": emailTxt.text!,"mainDp":"","userName":"Aniket","postLbl":"", "followers": "", "following": "","name": "","bio": ""])
+                    
                     navigation()
                     print("done")
                 }else{

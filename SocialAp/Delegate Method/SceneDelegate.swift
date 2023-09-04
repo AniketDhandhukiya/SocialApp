@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         if Auth.auth().currentUser != nil{
             let nasv = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "tabBar")
-            window?.rootViewController = nasv
+            window!.rootViewController = nasv
         }else{
             let nasv = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "signInPage")
         }

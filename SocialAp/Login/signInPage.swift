@@ -9,12 +9,16 @@ import UIKit
 import FirebaseAuth
 import FirebaseCore
 import GoogleSignIn
+import FirebaseDatabase
+import FirebaseFirestore
 
 class signInPage: UIViewController {
     @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var phoneOrEmailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    var fir = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +38,7 @@ class signInPage: UIViewController {
     }
     
     @IBAction func loginButtonAction(_ sender: Any) {
+        
         signIn()
     }
     

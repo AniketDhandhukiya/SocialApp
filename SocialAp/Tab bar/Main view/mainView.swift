@@ -10,16 +10,22 @@ import FirebaseStorage
 import FirebaseDatabase
 import FirebaseFirestore
 import FirebaseAuth
+import FirebaseCore
 import SDWebImage
 
 struct Data{
     var userImage : String
 }
 
+struct name{
+    var userName: String
+}
+
 class mainView: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     var array = ["e","f"]
     var arr = [Data]()
+    var arr2 = [name]()
     var arrayImage = [String]()
     var collRef : CollectionReference!
     @IBOutlet weak var cvForPost: UICollectionView!
@@ -58,20 +64,24 @@ class mainView: UIViewController, UICollectionViewDelegate,UICollectionViewDataS
         }
         let cells = cvForPost.dequeueReusableCell(withReuseIdentifier: "cellForPost", for: indexPath) as! CollectionViewCellForPost
         cells.postimage.sd_setImage(with: URL(string: arr[indexPath.row].userImage))
-        
         cells.userpostImage.layer.cornerRadius = 20
+        
         return cells
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if collectionView == cvForStory{
-            if indexPath.row == 0{
-                
-            }
-        }
-        else{
-            
-        }
-    }
+    
+    
+    
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        if collectionView == cvForStory{
+//            if indexPath.row == 0{
+//
+//            }
+//        }
+//        else{
+//
+//        }
+//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == cvForStory{
@@ -81,14 +91,14 @@ class mainView: UIViewController, UICollectionViewDelegate,UICollectionViewDataS
     }
     
     func getData(){
-        collRef = Firestore.firestore().collection("Post")
+        collRef = Firestore.firestore().collection("Posts")
         collRef.addSnapshotListener() { [self] documentSnapshot, error in
             if error == nil{
                 arr = documentSnapshot!.documents.map{ document in
                     return Data(userImage: document["Post"] as! String)
                      }
                 cvForPost.reloadData()
-                cvForStory.reloadData()
+                //cvForStory.reloadData()
                 }
             }
         }

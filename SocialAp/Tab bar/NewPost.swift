@@ -28,10 +28,10 @@ class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerC
     
    
     func saveFirData() {
-        self.uplodeImage(self.ImageForUpload.image!) { url in
+        self.uplodeImage(image: self.ImageForUpload.image!) { url in
             self.saveImage(profileImageUrl: url!) { success in
                 if success != nil {
-                    print("yrsg")
+                    print("done")
                 }
             }
         }
@@ -60,7 +60,7 @@ class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerC
         present(gallery, animated: true,completion: nil)
     }
     
-    func uplodeImage(_ image:UIImage,complition:@escaping((_ url:URL?)->())){
+    func uplodeImage(image:UIImage,complition:@escaping((_ url:URL?)->())){
             let storageRef = Storage.storage().reference().child("UserImages.png")
             let imageData = ImageForUpload.image?.pngData()
             let metaData = StorageMetadata()
@@ -71,8 +71,6 @@ class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerC
                     print("Success")
                     storageRef.downloadURL {[self] url, error in
                         complition(url)
-                        
-                        
                     }
                 }
                 else{
@@ -83,9 +81,8 @@ class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerC
     
     func saveImage(profileImageUrl:URL,complition:@escaping((_ url:URL?)->())){
         let userUid = Auth.auth().currentUser!.uid
-        
-        
-       self.fir.collection("Post").document(userUid).parent.addDocument(data: ["Post":profileImageUrl.absoluteString])
+       
+        self.fir.collection("Posts").document().parent.addDocument(data: ["UserUid":userUid,"Post":profileImageUrl.absoluteString])
         
 //        ref.child("userPost").child(userUid).au.setValue(["url" : profileImageUrl.absoluteString])
     }
